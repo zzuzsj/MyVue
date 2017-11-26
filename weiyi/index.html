@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0">
+    <title>myvue</title>
+    <style>
+      *{
+        margin: 0;
+        padding: 0;
+      }
+      .app-container{
+        width: 7.5rem;
+        height: 13.34rem;
+        background: #569afa;
+        overflow: hidden;
+      }
+      .g-top-bar{
+        width:  7.5rem;
+        height: 0.64rem;
+        position: relative;
+        overflow: hidden;
+      }
+      .g-body-container{
+        width:  7.5rem;
+        height: 10.92rem;
+        overflow: hidden;
+      }
+      .g-footer-tool{
+        width:  7.5rem;
+        height: 1.78rem;
+        overflow: hidden;
+      }
+
+      /* =====animate.css=== */
+      .s-animate-duration04{
+        animation-duration: 0.4s;
+      }
+      .s-animate-duration08{
+        animation-duration: 0.8s;
+      }
+      .s-animate-delay0{
+        animation-delay: 0s;
+      }
+      .s-animate-delay01{
+        animation-delay: 0.1s;
+      }
+      .s-animate-delay02{
+        animation-delay: 0.2s;
+      }
+      .s-animate-delay03{
+        animation-delay: 0.3s;
+      }
+      .s-animate-delay05{
+        animation-delay: 0.5s;
+      }
+      .s-animate-delay10{
+        animation-delay: 1s;
+      }
+      .s-animate-delay15{
+        animation-delay: 1.5s;
+      }
+      .s-animate-delay20{
+        animation-delay: 2s;
+      }
+      .g-footer-tool .s-animate-1020i{
+        animation-duration: 3s;
+        animation-delay: 1s;
+        animation-iteration-count: infinite;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="app"></div>
+    <!-- built files will be auto injected -->        
+    <script>
+        var deviceWidth = document.documentElement.clientWidth;
+        document.documentElement.style.fontSize = deviceWidth /7.5+ 'px';
+    </script>
+    
+  </body>
+</html>
