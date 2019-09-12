@@ -46,15 +46,15 @@ module.exports = {
     },
     module: {
       rules: [
-        {
-            test: /\.json$/,
-            loader: 'url-loader',
-            options: {
-                limit: 10000,
-                 name:  '/static/json/[name].[hash:7].[ext]'
-                // name: utils.assetsPath('json/[name].[hash:7].[ext]')
-            }
-        }
+        // {
+        //     test: /\.json$/,
+        //     loader: 'url-loader',
+        //     options: {
+        //         limit: 10000,
+        //          name:  '/static/json/[name].[hash:7].[ext]'
+        //         // name: utils.assetsPath('json/[name].[hash:7].[ext]')
+        //     }
+        // }
       ]
     }
   },
@@ -70,11 +70,11 @@ module.exports = {
       })
       .end()
     config.module
-      .rule('dsadsasa')
+      .rule('json')
+      .type('javascript/auto')
       .test(/\.json$/)
-      .type('json')
-      .use('json-loader')
-      .loader('json-loader')
+      .use('url-loader')
+      .loader('url-loader')
       .end()
   //     .use('url-loader')
   //     .loader('url-loader')
